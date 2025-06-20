@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
+import '../css/componentcss/Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav style={{ padding: '1rem', backgroundColor: '#333', color: 'white' }}>
-            <Link to="/" style={{ margin: '0 1rem', color: 'white' }}>Home</Link>
-            <Link to="/about" style={{ margin: '0 1rem', color: 'white' }}>About</Link>
-            <Link to="/contact" style={{ margin: '0 1rem', color: 'white' }}>Contact</Link>
+        <nav className="navbar">
+            <h2>MJM Consulting</h2>
+            <div className="nav-links">
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+            </div>
         </nav>
     )
 }

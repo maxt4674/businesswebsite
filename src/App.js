@@ -8,17 +8,19 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <main style={{ padding: '1rem' }}>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<AboutUs/>} />
-          <Route path="/contact" element={<ContactUs/>} />
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Navbar />
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -1,7 +1,9 @@
+import '../css/componentcss/Footer.css';
+
 const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2025 MJM</p>
+    <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} MJM Consulting. All rights reserved.</p>
     </footer>
   );
 };
